@@ -11,6 +11,8 @@ Three R scripts are provided
 ##  gold-standard isoform-specific dataset
 We reviewed the literature for papers that determine the function of isoform that can be mapped to Ensembl IDs and whose function can be mapped to GO terms, resulting in a collection of 307 examples where an isoform was shown to be either associated with a certain GO term or not associated with it. 
 
+* [isoform-literature-curation.tsv](https://github.com/TheJacksonLaboratory/isopretEM/blob/main/data/isoform-literature-curation.tsv)
+
 
 ## Citing isopretEM
 
