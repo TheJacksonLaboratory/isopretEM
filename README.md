@@ -31,7 +31,15 @@ We reviewed the literature for papers that determine the function of isoform tha
 | PMID              | PMID:16951170   | 
 
 
-								
+
+
+## Predictions
+Isoform-specific Gene-Ontology annotations were generated for each of the three subontologies.
+
+* [isoform_function_list_bp.txt (biological process)](https://github.com/TheJacksonLaboratory/isopretEM/blob/main/predictions/isoform_function_list_bp.txt)
+* [isoform_function_list_cc.txt (cellular component)](https://github.com/TheJacksonLaboratory/isopretEM/blob/main/predictions/isoform_function_list_bp.txt)
+* [isoform_function_list_mf.txt (molecular function)](https://github.com/TheJacksonLaboratory/isopretEM/blob/main/predictions/isoform_function_list_bp.txt)
+
 
 
 ## Citing isopretEM
