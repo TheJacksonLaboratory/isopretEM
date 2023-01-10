@@ -11,6 +11,8 @@ The script [predict.R](https://github.com/TheJacksonLaboratory/isopretEM/blob/ma
 
 The script [combine_tables.R](https://github.com/TheJacksonLaboratory/isopretEM/blob/main/scripts/combine_tables.R) should be run after every instance of predict.R has completed running and producing output. It combined all the outputs, perform the M step if needed, and creates new inputs for the next round of predict2.R runs. The patameter ‘number.of.nodes’ (currently 200) is the number of subsets the isoforms are split into. When the local maximum is reached, it outputs -1 into the file ‘convergence_log.txt’. The sparse matrix ‘combined_iso_has_func.txt’ is an isoform X GO term Boolean matrix that indicates which functions were assigned to each isoforms. The isoform names that correspond to rows are in the output file named ‘rownames.txt’ , and the GO terms corresponding to columns are in the output file named ‘columns.txt’.
 
+In order to support the parallelization of the algorithm the algorithm should be run on a computer cluster with 200 availabe nodes, and each node should have at least 4 cores as the genetic algorithm also uses parallelization.
+
 ##  gold-standard isoform-specific dataset
 We reviewed the literature for papers that determine the function of isoform that can be mapped to Ensembl IDs and whose function can be mapped to GO terms, resulting in a collection of 307 examples where an isoform was shown to be either associated with a certain GO term or not associated with it. 
 
